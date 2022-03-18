@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        #con,#con1,#con2,#con3,#con4 {
+            border: 2px solid red;
+            background-color: yellow;
+            height: 4em;
+            width: 5em;
+            margin: 20px;
+            transition: all 1s ease-in-out;
+
+        }
+
+        #box,#box1,#box2,#box3,#box4 {
+   margin: 20px;
+   top:12px ;
+   
+            position: relative;
+
+            right: 80px;
+
+            font-size: 2em;
+
+            z-index: -5;
+        }
+
+        #con:hover {
+
+            transform: translateX(70px);
+        }
+        #con1:hover {
+
+            transform: translatey(-70px);
+        }
+        #con2:hover {
+            transform : translateX(-89px);
+        }
+        
+        #con3:hover {
+            transform: scale(3);
+        }
+        #con4:hover {
+            transform: skew(30deg);
+        }
+        
+        #op {
+            display: flex;
+            justify-content: center;
+        }
+        #con1 ,#con2 {
+            position: relative;
+            left: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="op">
+        <div id="con"></div>
+        <div id="box"></div>
+    </div>
+    <div id="op">
+        <div id="con1"></div>
+        <div id="box1"></div>
+    </div>
+    <div id="op">
+        <div id="con2"></div>
+        <div id="box2"></div>
+    </div>
+    <div id="op">
+        <div id="con3"></div>
+        <div id="box3"></div>
+    </div>
+    <div id="op">
+        <div id="con4"></div>
+        <div id="box4"></div>
+    </div>
+</body>
+
+</html>
